@@ -1,22 +1,22 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Hosting Service's</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
-        <link rel="shortcut icon" href="favicon.png">
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>  
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>uHost</title>
+    <link rel="shortcut icon" href="images/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="shared.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
     <header class="main-header">
         <div>
             <a href="index.html" class="main-header__brand">
-                uHost
+                <img src="images/uhost-icon.png" alt="hosting server">
             </a>
         </div>
         <nav class="main-nav">
@@ -27,7 +27,7 @@
                 <li class="main-nav__item">
                     <a href="customers/index.html">Customers</a>
                 </li>
-                <li class="main-nav__item main-nav___item-cta">
+                <li class="main-nav__item main-nav__item--cta">
                     <a href="start-hosting/index.html">Start Hosting</a>
                 </li>
             </ul>
@@ -35,35 +35,35 @@
     </header>
     <main>
         <section id="product-overview">
-            <h1>Get the freedom you deserve</h1>
+            <h1>Get the freedom you deserve.</h1>
         </section>
         <section id="plans">
-            <h1 class="section-title">choose your plan</h1>
-            <div>
+            <h1 class="section-title">Choose Your Plan</h1>
+            <div class="plan__list">
                 <article class="plan">
                     <h1 class="plan__title">FREE</h1>
                     <h2 class="plan__price">$0/month</h2>
                     <h3>For hobby projects or small teams.</h3>
                     <ul class="plan__features">
-                        <li>1 Workspace</li>
-                        <li>Unlimited Traffic</li>
-                        <li>10GB Storage</li>
-                        <li>Basic Support</li>
+                        <li class="plan__feature">1 Workspace</li>
+                        <li class="plan__feature">Unlimited Traffic</li>
+                        <li class="plan__feature">10GB Storage</li>
+                        <li class="plan__feature">Basic Support</li>
                     </ul>
                     <div>
                         <button class="button">CHOOSE PLAN</button>
                     </div>
                 </article>
                 <article class="plan plan--highlighted">
-                    <h1 class="plan__anotation">RECOMMENDED</h1>
+                    <h1 class="plan__annotation">RECOMMENDED</h1>
                     <h1 class="plan__title">PLUS</h1>
                     <h2 class="plan__price">$29/month</h2>
                     <h3>For ambitious projects.</h3>
                     <ul class="plan__features">
-                        <li>5 Workspaces</li>
-                        <li>Unlimited Traffic</li>
-                        <li>100GB Storage</li>
-                        <li>Plus Support</li>
+                        <li class="plan__feature">5 Workspaces</li>
+                        <li class="plan__feature">Unlimited Traffic</li>
+                        <li class="plan__feature">100GB Storage</li>
+                        <li class="plan__feature">Plus Support</li>
                     </ul>
                     <div>
                         <button class="button">CHOOSE PLAN</button>
@@ -74,10 +74,10 @@
                     <h2 class="plan__price">$99/month</h2>
                     <h3>Your enterprise solution.</h3>
                     <ul class="plan__features">
-                        <li>10 Workspaces</li>
-                        <li>Unlimited Traffic</li>
-                        <li>Unlimited Storage</li>
-                        <li>Priority Support</li>
+                        <li class="plan__feature">10 Workspaces</li>
+                        <li class="plan__feature">Unlimited Traffic</li>
+                        <li class="plan__feature">Unlimited Storage</li>
+                        <li class="plan__feature">Priority Support</li>
                     </ul>
                     <div>
                         <button class="button">CHOOSE PLAN</button>
@@ -92,19 +92,19 @@
                     <div class="key-feature__image">
 
                     </div>
-                    <p class="key-feature__discreption">3,857,000 Trusting Customers</p>
+                    <p class="key-feature__description">3,857,000 Trusting Customers</p>
                 </li>
                 <li class="key-feature">
                     <div class="key-feature__image">
 
                     </div>
-                    <p class="key-feature__discreption">99.999% Uptime Guarantee</p>
+                    <p class="key-feature__description">99.999% Uptime Guarantee</p>
                 </li>
                 <li class="key-feature">
                     <div class="key-feature__image">
 
                     </div>
-                    <p class="key-feature__discreption">Lightning Fast CDN</p>
+                    <p class="key-feature__description">Lightning Fast CDN</p>
                 </li>
             </ul>
         </section>
@@ -121,6 +121,6 @@
             </ul>
         </nav>
     </footer>
-    <script src="play.js"></script>
-    </body>
+</body>
+
 </html>
