@@ -11,8 +11,7 @@ for(let i=0; i<buttons.length; i++){
 }
 
 // to hide the modal and dropback
-let modalButton = document.querySelector(".modal__actions .modal__action");
-console.log(modalButton);
+let modalButton = document.querySelector(".btn");
 modalButton.addEventListener("click", function(){
     modal.style.display = "none";
     dropback.style.display = "none";
