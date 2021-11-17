@@ -85,6 +85,9 @@ body {
     .main-nav {
         display: inline-block;
     }
+    .toggle-button {
+        visibility: hidden;
+    }
 }
 
 .main-nav__items {
