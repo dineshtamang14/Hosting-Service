@@ -1,5 +1,6 @@
 .testimonial {
   font-size: 1rem;
+  width: 100%;
 }
 
 .testimonial:first-of-type {
@@ -8,13 +9,13 @@
 
 .testimonial__image-container {
   width: 100%;
-  max-width: 40rem;
+  max-width: 38rem;
   box-shadow: 3px 3px 5px 3px rgba(0, 0, 0, 0.3);
 }
 
 .testimonial__image {
   width: 100%;
-  vertical-align: top;
+  /* vertical-align: top; */
 }
 
 .testimonial__info {
@@ -57,12 +58,14 @@
 
 @media (min-width: 40rem) {
   .testimonial {
-    margin: 3rem 0;
+    margin: 3rem auto;
+    max-width: 1500px;
   }
 
   .testimonial__image-container {
     display: inline-block;
     vertical-align: middle;
+    width: 66%;
   }
 
   .testimonial__info {
