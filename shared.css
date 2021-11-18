@@ -39,14 +39,14 @@ body {
     color: #0e4f1f;
     text-decoration: none;
     font-weight: bold;
-    font-size: 22px;
+    height: 2.5rem;
     display: inline-block;
     height: 22px;
     vertical-align: middle;
 }
 
 .main-header__brand img {
-    height: 24px;
+    height: 100%;
 }
 
 .toggle-button {
