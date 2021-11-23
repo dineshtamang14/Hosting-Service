@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:400,700&display=swap');
+
 * {
     box-sizing: border-box;
 }
@@ -81,10 +85,11 @@ body {
     vertical-align: middle;
 }
 
-@media only screen and (min-width: 40rem){
+@media only screen and (min-width: 40rem) {
     .main-nav {
         display: inline-block;
     }
+
     .toggle-button {
         visibility: hidden;
     }
