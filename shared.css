@@ -1,26 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,400,900');
+@import url('https://fonts.googleapis.com/css?family=Anton');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
 
 * {
     box-sizing: border-box;
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     margin: 0;
 }
 
-.dropback {
+main {
+    min-height: calc(100vh - 3.5rem - 8rem);
+    margin-top: 3.5rem;
+}
+
+.backdrop {
     position: fixed;
     display: none;
-    height: 100vh;
-    width: 100vw;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.5);
     z-index: 100;
-    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
 }
 
 .main-header {
@@ -29,28 +33,11 @@ body {
     top: 0;
     left: 0;
     background: #2ddf5c;
-    padding: 0.rem 1rem;
+    padding: 0.5rem 1rem;
     z-index: 1;
-    background-color: #082032;
-}
-
-.main-header>div {
-    display: inline-block;
-    vertical-align: middle;
-}
-
-.main-header__brand {
-    color: #0e4f1f;
-    text-decoration: none;
-    font-weight: bold;
-    height: 2.5rem;
-    display: inline-block;
-    height: 22px;
-    vertical-align: middle;
-}
-
-.main-header__brand img {
-    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .toggle-button {
@@ -61,8 +48,6 @@ body {
     padding-top: 0;
     padding-bottom: 0;
     vertical-align: middle;
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
 }
 
 .toggle-button:focus {
@@ -75,35 +60,33 @@ body {
     background: black;
     display: block;
     margin: 0.6rem 0;
+}
 
+.main-header__brand {
+    color: #0e4f1f;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.main-header__brand img {
+    height: 2.5rem;
+    /* width: 100%; */
 }
 
 .main-nav {
     display: none;
-    text-align: right;
-    width: calc(100% - 122px);
-    vertical-align: middle;
-}
-
-@media only screen and (min-width: 40rem) {
-    .main-nav {
-        display: inline-block;
-    }
-
-    .toggle-button {
-        visibility: hidden;
-    }
 }
 
 .main-nav__items {
     margin: 0;
     padding: 0;
     list-style: none;
+    display: flex;
 }
 
 .main-nav__item {
     display: inline-block;
-    margin: 0 16px;
+    margin: 0 1rem;
 }
 
 .main-nav__item a,
@@ -111,7 +94,7 @@ body {
     text-decoration: none;
     color: #0e4f1f;
     font-weight: bold;
-    padding: 3px 0;
+    padding: 0.2rem 0;
 }
 
 .main-nav__item a:hover,
@@ -124,7 +107,7 @@ body {
 .mobile-nav__item--cta a {
     color: white;
     background: #ff1b68;
-    padding: 8px 16px;
+    padding: 0.5rem 1rem;
     border-radius: 8px;
 }
 
@@ -137,9 +120,23 @@ body {
     border: none;
 }
 
+@media (min-width: 40rem) {
+    .toggle-button {
+        display: none;
+    }
+
+    .main-nav {
+        /* display: inline-block;
+        text-align: right;
+        width: calc(100% - 44px);
+        vertical-align: middle; */
+        display: flex;
+    }
+}
+
 .main-footer {
     background: black;
-    padding: 1rem;
+    padding: 2rem;
     margin-top: 3rem;
 }
 
@@ -152,21 +149,12 @@ body {
 
 .main-footer__link {
     display: block;
-    /* margin: 0 1rem; */
-    padding: 0.5rem;
+    margin: 1rem 0;
 }
 
 .main-footer__link a {
     color: white;
     text-decoration: none;
-}
-
-@media only screen and (min-width: 40rem) {
-    .main-footer__link {
-        display: inline-block;
-        margin: 0 1rem;
-        padding: 0.5rem;
-    }
 }
 
 .main-footer__link a:hover,
@@ -207,7 +195,7 @@ body {
     color: white;
     font: inherit;
     border: 1.5px solid #0e4f1f;
-    padding: 8px;
+    padding: 0.5rem;
     border-radius: 8px;
     font-weight: bold;
     cursor: pointer;
@@ -232,4 +220,11 @@ body {
 
 .open {
     display: block !important;
+}
+
+@media (min-width: 40rem) {
+    .main-footer__link {
+        display: inline-block;
+        margin: 0 1rem;
+    }
 }
